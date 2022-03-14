@@ -6,21 +6,24 @@ html, body {
 	box-sizing: border-box;
 }
 body {
-    background-color:slategray;
+    /* display: flex;
+    flex-direction: column; */
+    background-image: linear-gradient(to right bottom, #b30a0a, #89031b, #5d0b1d, #320e17, #000000);
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
-    font-size: 50px;
-    font-family: 'Teko', sans-serif;;
+    height: 15%;
+    font-size: 70px;
+    font-family: 'Teko', sans-serif;
+    color: white;
 }
 .calculadora {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: rgba(0, 0, 0, 0.87);
     height: 38rem;
     width: 30rem;
     margin: 0 auto;
@@ -35,6 +38,7 @@ header {
     background-color: white;
     padding: 1%;
     font-size: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 7%;
     width: 75%;
     margin: 5%;
@@ -50,12 +54,17 @@ header {
 .btn {
     padding: 1.5rem;
     border: none;
+    background-color: rgb(15, 55, 70);
+    color:white;
     border-radius: 10px;
     font-size: 25px;
     font-weight: bold;
     width: 4.5rem;
     text-align: center;
     cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(6, 26, 34);
 }
  .tr:nth-child(5) {
     margin-top: 2%;
@@ -67,6 +76,11 @@ header {
 }
 .tr:nth-child(4) td:nth-child(4) .btn {
     height: 100%;
+    background-color: orange;
+    color: white;
+}
+.tr:nth-child(4) td:nth-child(4) .btn:hover {
+    background-color: orangered;
 }
 .tr:nth-child(5) td:nth-child(1) {
     position: absolute;
@@ -79,4 +93,15 @@ header {
 }
 .tr:nth-child(5) td:nth-child(1) .btn {
     width: 100%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+}
+.footer p {
+    text-align: center;
+    color: white;
+    font-size: 35px;
 }
