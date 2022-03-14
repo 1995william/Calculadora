@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
-    <header>
-        
+    <header class="cabecalho">
+        <h1>Calculadora</h1>
     </header>
+
+    <main>
+        <div class="calculadora">
+            
+            <table class="container__calculadora">
+                <thead class="resultado">
+                    <h2 class="h2">32434</h2>
+                </thead>
+                <tr class="tr">
+                    <td class="td"><button class="btn" data-clean="C">C</button></td>
+                    <td class="td"><button class="btn" data-clean="del"><</button></td>
+                    <td class="td"><button class="btn" data-option="/">/</button></td>
+                    <td class="td"><button class="btn" data-option="*">X</button></td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"><button class="btn" data-option="7">7</button></td>
+                    <td class="td"><button class="btn" data-option="8">8</button></td>
+                    <td class="td"><button class="btn" data-option="9">9</button></td>
+                    <td class="td"><button class="btn" data-option="-">-</button></td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"><button class="btn" data-option="4">4</button></td>
+                    <td class="td"><button class="btn" data-option="5">5</button></td>
+                    <td class="td"><button class="btn" data-option="6">6</button></td>
+                    <td class="td"><button class="btn" data-option="+">+</button></td>
+                </tr>
+                <tr class="tr">
+                    <td class="td"><button class="btn" data-option="1">1</button></td>
+                    <td class="td"><button class="btn" data-option="2">2</button></td>
+                    <td class="td"><button class="btn" data-option="3">3</button></td>
+                    <td class="td"><button class="btn" data-resultado="calcular">=</button></td>
+                </tr>
+                <tr class="tr">
+                    <td><button class="btn" data-option="0">0</button></td>
+                    <td><button class="btn" data-option=".">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rodrigo William</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
