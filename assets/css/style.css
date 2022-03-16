@@ -6,8 +6,6 @@ html, body {
 	box-sizing: border-box;
 }
 body {
-    /* display: flex;
-    flex-direction: column; */
     background-image: linear-gradient(to right bottom, #b30a0a, #89031b, #5d0b1d, #320e17, #000000);
 }
 header {
@@ -104,4 +102,17 @@ header {
     text-align: center;
     color: white;
     font-size: 35px;
+}
+@media (max-width: 480px) {
+    .calculadora {
+      width: 90%;
+      max-height: 500px;
+    }
+    .btn {
+        padding: 1rem;
+        width: 3.1rem;
+    }
+    .footer p {
+        font-size: 20px;
+    }
 }
