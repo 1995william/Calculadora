@@ -103,16 +103,44 @@ header {
     color: white;
     font-size: 35px;
 }
-@media (max-width: 480px) {
+@media (max-width: 375px) {
+    header {
+        height: 10%;
+        font-size: 45px;
+    }
     .calculadora {
-      width: 90%;
-      max-height: 500px;
+        height: 2rem;
+        width: 10rem;
+        margin: auto auto;
     }
     .btn {
         padding: 1rem;
-        width: 3.1rem;
+        width: 2rem;
     }
     .footer p {
-        font-size: 20px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 420px) {
+    .calculadora {
+        height: 30rem;
+        width: 20rem;
+    }
+    .btn {
+        padding: 1rem;
+        width: 3rem;
+    }
+    .footer p {
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        margin-top: 5%;
+    }
+}
+@media (max-width: 912px) {
+    main {
+        margin-top: 10%;
     }
 }
