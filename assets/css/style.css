@@ -94,14 +94,19 @@ header {
 }
 .footer {
     position: fixed;
-    bottom: 0;
-    height: 7%;
+    bottom: 3%;
     width: 100%;
 }
+
 .footer p {
     text-align: center;
     color: white;
     font-size: 35px;
+    
+}
+.footer a  {
+    text-decoration: none;
+    color: orange;
 }
 @media (max-width: 375px) {
     header {
@@ -111,7 +116,6 @@ header {
     .calculadora {
         height: 2rem;
         width: 10rem;
-        margin: auto auto;
     }
     .btn {
         padding: 1rem;
@@ -137,10 +141,5 @@ header {
 @media (max-width: 768px) {
     main {
         margin-top: 5%;
-    }
-}
-@media (max-width: 912px) {
-    main {
-        margin-top: 10%;
     }
 }
