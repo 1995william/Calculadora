@@ -5,6 +5,7 @@ export function erro(resultado) {
         return clean();
     };
 };
+
 export function limiteDeCaracteres(digito) {
     if (digito.length == 16) {
         const resultado = document.querySelector('.h2');
