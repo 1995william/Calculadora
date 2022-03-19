@@ -1,15 +1,16 @@
 import { clean } from './limpaCampos.js';
 
-export function erro(resultado) {
-    if(resultado == 'undefined') {
-        const resultado = document.querySelector('.h2');
-        resultado.innerHTML = 'Insira um valor...';
-    }
-    if (resultado == 'Infinity' || resultado == 'NaN' || resultado == 'Insira um valor...') {
+export function erroDeCalculo (resultado) {
+    if (resultado == 'Infinity' || resultado == 'NaN' || resultado == 'enter a value...') {
         return clean();
     }
 };
-
+export function erroSemDigito (resultado) {
+    if(resultado == 'undefined') {
+        const resultado = document.querySelector('.h2');
+        resultado.innerHTML = 'enter a value...';
+    }
+}
 export function limiteDeCaracteres(digito) {
     if (digito.length == 12) {
         const resultado = document.querySelector('.h2');
