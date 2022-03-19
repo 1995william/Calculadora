@@ -22,6 +22,7 @@ import {erro, limiteDeCaracteres} from './erros.js';
     // evento que executa o resultado da operação
     document.querySelector('[data-resultado=calcular]').addEventListener('click', () => {
         resultado.innerHTML = eval(resultado.textContent);
+        erro(resultado.textContent);
     });
 })
 ();
