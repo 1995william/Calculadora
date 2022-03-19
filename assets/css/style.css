@@ -6,16 +6,22 @@ html, body {
 	box-sizing: border-box;
 }
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-image: linear-gradient(to right bottom, #b30a0a, #89031b, #5d0b1d, #320e17, #000000);
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%;
+    height: 10%;
     font-size: 70px;
     font-family: 'Teko', sans-serif;
     color: white;
+}
+main {
+    height: 70%;
 }
 .calculadora {
     display: flex;
@@ -93,11 +99,10 @@ header {
     width: 100%;
 }
 .footer {
-    position: fixed;
-    bottom: 3%;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .footer p {
     text-align: center;
     color: white;
@@ -107,39 +112,4 @@ header {
 .footer a  {
     text-decoration: none;
     color: orange;
-}
-@media (max-width: 375px) {
-    header {
-        height: 10%;
-        font-size: 45px;
-    }
-    .calculadora {
-        height: 2rem;
-        width: 10rem;
-    }
-    .btn {
-        padding: 1rem;
-        width: 2rem;
-    }
-    .footer p {
-        font-size: 22px;
-    }
-}
-@media (max-width: 420px) {
-    .calculadora {
-        height: 30rem;
-        width: 20rem;
-    }
-    .btn {
-        padding: 1rem;
-        width: 3rem;
-    }
-    .footer p {
-        font-size: 22px;
-    }
-}
-@media (max-width: 768px) {
-    main {
-        margin-top: 5%;
-    }
 }
