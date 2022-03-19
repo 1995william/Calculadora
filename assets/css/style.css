@@ -73,7 +73,7 @@ main {
     background-color: rgb(6, 26, 34);
 }
 .btn:active {
-    background-color:yellowgreen;
+    background-color:rgba(27, 162, 211, 0.712);
 }
  .tr:nth-child(5) {
     margin-top: 2%;
@@ -90,6 +90,9 @@ main {
 }
 .tr:nth-child(4) td:nth-child(4) .btn:hover {
     background-color: orangered;
+}
+.tr:nth-child(4) td:nth-child(4) .btn:active {
+    background-color: red;
 }
 .tr:nth-child(5) td:nth-child(1) {
     position: absolute;
