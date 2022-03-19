@@ -7,9 +7,9 @@ export function erro(resultado) {
 };
 
 export function limiteDeCaracteres(digito) {
-    if (digito.length == 16) {
+    if (digito.length == 12) {
         const resultado = document.querySelector('.h2');
-        const limite = resultado.substring(15, 16);
+        const limite = resultado.substring(11, 12);
         return limite;
     };
 };
