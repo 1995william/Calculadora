@@ -1,9 +1,13 @@
 import { clean } from './limpaCampos.js';
 
 export function erro(resultado) {
-    if (resultado == 'Infinity' || resultado == 'NaN') {
+    if(resultado == 'undefined') {
+        const resultado = document.querySelector('.h2');
+        resultado.innerHTML = 'Insira um valor...';
+    }
+    if (resultado == 'Infinity' || resultado == 'NaN' || resultado == 'Insira um valor...') {
         return clean();
-    };
+    }
 };
 
 export function limiteDeCaracteres(digito) {
