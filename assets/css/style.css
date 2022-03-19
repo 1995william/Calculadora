@@ -54,6 +54,7 @@ main {
 }
 .td {
    margin: 3%;
+   border-radius: 10px;
 }
 .btn {
     padding: 1.5rem;
@@ -66,9 +67,13 @@ main {
     width: 4.5rem;
     text-align: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
     background-color: rgb(6, 26, 34);
+}
+.btn:active {
+    background-color:yellowgreen;
 }
  .tr:nth-child(5) {
     margin-top: 2%;
