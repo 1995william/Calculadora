@@ -1,5 +1,5 @@
 import {del,clean} from './limpaCampos.js';
-import {erroDeCalculo, limiteDeCaracteres,erroSemDigito} from './erros.js';
+import {erroDeCalculo,limiteDeCaracteres,erroSemDigito,erroNaN} from './erros.js';
 (() => {
     const resultado = document.querySelector('.h2');
     // evento que identifica o botao Clean
@@ -23,6 +23,7 @@ import {erroDeCalculo, limiteDeCaracteres,erroSemDigito} from './erros.js';
     document.querySelector('[data-resultado=calcular]').addEventListener('click', () => {
         resultado.innerHTML = eval(resultado.textContent);
         erroSemDigito(resultado.textContent);
+        erroNaN(resultado.textContent);
     });
 })
 ();
