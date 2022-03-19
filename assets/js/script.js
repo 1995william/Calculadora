@@ -1,5 +1,5 @@
 import {del,clean} from './limpaCampos.js';
-import {erro, limiteDeCaracteres} from './erros.js';
+import {erroDeCalculo, limiteDeCaracteres,erroSemDigito} from './erros.js';
 (() => {
     const resultado = document.querySelector('.h2');
     // evento que identifica o botao Clean
@@ -12,7 +12,7 @@ import {erro, limiteDeCaracteres} from './erros.js';
     const botoes = document.querySelectorAll('[data-option]');
     botoes.forEach(botao => {
         botao.addEventListener('click', () => {
-            erro(resultado.textContent);
+            erroDeCalculo(resultado.textContent);
             limiteDeCaracteres(resultado.textContent);
             const digito = botao.dataset.option;
             resultado.innerHTML += digito;
@@ -22,7 +22,7 @@ import {erro, limiteDeCaracteres} from './erros.js';
     // evento que executa o resultado da operação
     document.querySelector('[data-resultado=calcular]').addEventListener('click', () => {
         resultado.innerHTML = eval(resultado.textContent);
-        erro(resultado.textContent);
+        erroSemDigito(resultado.textContent);
     });
 })
 ();
