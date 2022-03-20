@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
-
 html, body {
 	width: 100%;
 	height: 100vh;
@@ -9,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-image: linear-gradient(to right bottom, #b30a0a, #89031b, #5d0b1d, #320e17, #000000);
+    background-image: linear-gradient(to bottom, #0787aa, #3d5e83, #3e3b53, #291f27, #000000);
 }
 header {
     display: flex;
