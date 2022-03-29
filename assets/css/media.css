@@ -1,33 +1,21 @@
-@media (max-width: 375px) {
-    header {
-        height: 10%;
-        font-size: 45px;
-    }
-    .h2 {
-        font-size: 28px;
-    }
-    .calculadora {
-        height: 2rem;
-        width: 10rem;
-    }
-    .btn {
-        padding: 1rem;
-        width: 2rem;
-    }
-    .footer p {
-        font-size: 22px;
-    }
-}
 @media (max-width: 420px) {
+    header {
+        font-size: 50px;
+    }
     .calculadora {
+        gap: 1rem;
+        padding: 1rem 2rem;
         height: 30rem;
         width: 20rem;
     }
-    .btn {
-        padding: 1rem;
-        width: 3rem;
+    .h2 {
+        height: 2.5rem;
+        font-size: 35px;
+    }
+    .footer {
+        margin-bottom: 2rem;
     }
     .footer p {
-        font-size: 22px;
+        font-size: 25px;
     }
 }
