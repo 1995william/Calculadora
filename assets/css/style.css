@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background:linear-gradient(to bottom, #0787aa, #3d5e83, #3e3b53, #291f27, #000000);
+    background: rgb(53, 51, 153);
 }
 header {
     display: flex;
