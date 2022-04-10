@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: rgb(53, 51, 153);
+    background: rgb(19, 17, 65);
 }
 header {
     display: flex;
