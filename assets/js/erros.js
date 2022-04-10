@@ -12,7 +12,7 @@ export function erroNaN (resultado) {
     };
 }
 export function erroSemDigito (resultado) {
-    if(resultado == 'undefined') {
+    if(resultado == 'undefined' || resultado == '.') {
         const resultado = document.querySelector('.h2');
         resultado.innerHTML = 'enter a value...';
     };
