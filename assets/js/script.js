@@ -21,9 +21,13 @@ import {erroDeCalculo,limiteDeCaracteres,erroSemDigito,erroNaN} from './erros.js
 
     // evento que executa o resultado da operação
     document.querySelector('[data-resultado=calcular]').addEventListener('click', () => {
-        resultado.innerHTML = eval(resultado.textContent);
-        erroSemDigito(resultado.textContent);
-        erroNaN(resultado.textContent);
+        try {
+            resultado.innerHTML = eval(resultado.textContent);
+            erroSemDigito(resultado.textContent);
+            erroNaN(resultado.textContent);
+        } catch (e) {
+            erroSemDigito(resultado.textContent);
+        }
     });
 })
 ();
