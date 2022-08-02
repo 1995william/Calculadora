@@ -10,17 +10,18 @@ body {
     justify-content: space-around;
     background: rgb(19, 17, 65);
 }
-header {
+.cabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10%;
     font-size: 70px;
+    margin-top: 1rem;
     font-family: 'Teko', sans-serif;
     color: white;
 }
 main {
-    height: 43rem;
+    max-height: 43rem;
 }
 .calculadora {
     display: grid;

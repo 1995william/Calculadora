@@ -1,5 +1,5 @@
 @media (max-width: 420px) {
-    header {
+    .cabecalho {
         font-size: 50px;
     }
     .calculadora {
@@ -13,7 +13,7 @@
         font-size: 35px;
     }
     .footer {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .footer p {
         font-size: 20px;
